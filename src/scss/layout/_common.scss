@@ -1,0 +1,88 @@
+html,
+body {
+	height: 100%;
+}
+
+#wrapper {
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+#main {
+	display: flex;
+	min-height: calc(100vh - 80px);
+}
+
+.main-content {
+	flex-grow: 1;
+	flex-basis: 0;
+	padding: 20px;
+	
+	@include media('<1600px') {
+		padding: 10px;
+	}
+}
+
+.columns-wrapper {
+	display: flex;
+	margin: 0 -10px;
+	
+	@include media('<1600px') {
+		margin: 0 -5px;
+	}
+}
+
+.column-left {
+	width: 430px;
+	min-width: 430px;
+	padding: 0 10px;
+	
+	@include media('<1900px') {
+		width: 350px;
+		min-width: 350px;
+	}
+	
+	@include media('<1600px') {
+		padding: 0 5px;
+		width: 260px;
+		min-width: 260px;
+	}
+}
+
+.column-right {
+	flex-grow: 1;
+	flex-basis: 0;
+	padding: 0 10px;
+	
+	@include media('<1600px') {
+		padding: 0 5px;
+	}
+}
+
+.subcols {
+	display: flex;
+	margin: 0 -10px 20px;
+	
+	@include media('<1600px') {
+		margin: 0 -5px 20px;
+	}
+
+	.column {
+		padding: 0 10px;
+		width: 55.5%;
+		
+		@include media('<1600px') {
+			padding: 0 5px;
+		}
+		
+		&:first-child {
+			width: 44.5%;
+		}
+	}
+	
+	.box {
+		height: 100%;
+	}
+}

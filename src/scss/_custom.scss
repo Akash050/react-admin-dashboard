@@ -1,0 +1,667 @@
+// Here you can add other styles
+
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  align-items: center;
+  background-color: white;
+  .login-card-wrapper {
+    width: 50vw;
+    min-height: 100vh;
+  }
+  .login-card {
+    height: 290px;
+    width: 350px;
+    margin: 0 auto;
+    position: relative;
+    transform: translateY(50%);
+    border: 1px solid #d8dde6;
+    box-sizing: border-box;
+    padding: 10px;
+    .login-form {
+      .login-form-header {
+        display: flex;
+        justify-content: center;
+        .text-muted {
+          font-size: 25px;
+          color: #3a485a;
+          display: inline-block;
+          font-weight: 500;
+          letter-spacing: 4px;
+        }
+      }
+      .login-body {
+        p {
+        }
+        .login-btn {
+          background: #0070d2;
+          border-radius: 4px;
+          margin-top: 15px;
+          width: 100%;
+        }
+        .forget-password {
+          margin-top: 5px;
+          float: left;
+        }
+      }
+    }
+  }
+  .login-field-label {
+    float: left;
+    margin: 5px 0px 5px 0px;
+  }
+  .login-logo {
+    width: 30px;
+    height: 38px;
+    margin: 10px;
+  }
+  .login-card-footer {
+    display: flex;
+  }
+}
+.login-card-footer {
+  position: absolute;
+}
+.error {
+  color: red;
+}
+
+// Register Component
+.register-wrapper {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  align-items: center;
+  background-color: white;
+  .register-card-wrapper {
+    width: 50vw;
+    min-height: 100vh;
+  }
+  .register-card {
+    height: 440px;
+    width: 439px;
+    margin: 0 auto;
+    position: relative;
+
+    transform: translateY(15%);
+    border: 1px solid #d8dde6;
+    box-sizing: border-box;
+    padding: 10px;
+    .register-form {
+      .register-form-header {
+        display: flex;
+        justify-content: center;
+
+        .text-muted {
+          font-size: 25px;
+          color: #3a485a;
+          display: inline-block;
+          font-weight: 500;
+          letter-spacing: 4px;
+        }
+      }
+      .register-body {
+        p {
+          float: left;
+          font-family: Arial;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 11px;
+          line-height: 13px;
+          margin-top: 1rem;
+        }
+
+        .register-btn {
+          background: #0070d2;
+          border-radius: 4px;
+          width: 20%;
+          float: left;
+          margin: 5px;
+        }
+        .forget-password {
+          margin-top: 5px;
+          float: left;
+        }
+      }
+    }
+  }
+  .login-field-label {
+    margin-top: 10px;
+    background-color: red;
+  }
+  .register-image {
+    width: 50vw;
+    min-height: 100vh;
+  }
+  .register-card-footer {
+    display: flex;
+  }
+  .input-field-logo {
+    margin-top: 10px;
+    margin-right: 5px;
+    float: left;
+  }
+  .input-card {
+    margin: 5px;
+  }
+  .comapny-title {
+    width: 18.67px;
+    height: 19.76px;
+    margin: 5px;
+  }
+  .logo {
+    width: 30px;
+    height: 38px;
+    margin: 10px;
+  }
+}
+
+//Employee component
+.employee-header {
+  display: flex;
+  justify-content: space-between;
+  .left-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    .no-of-employees {
+      display: flex;
+      justify-content: space-evenly;
+    }
+    .payment {
+      display: flex;
+      justify-content: space-evenly;
+    }
+  }
+  .popup-btn {
+    display: flex;
+  }
+  .right-wrapper {
+    background-color: white;
+    border: 1px solid #e0e0e2;
+    padding: 12px;
+    border-radius: 5px;
+    .btn-value {
+      color: black;
+      font-weight: 500;
+    }
+  }
+}
+
+.input-title {
+  font-size: 15px;
+  font-weight: 700;
+  align-self: center;
+  margin: 5px;
+}
+.input-value {
+  color: #0046fe;
+  font-weight: 700;
+  padding: 0px 23px;
+  height: 52px;
+  background-color: white;
+  border: 1px solid #e0e0e2;
+  border-radius: 10px;
+  display: block;
+  text-align: center;
+  line-height: 52px;
+}
+.card-designation {
+  font-size: small;
+  text-align: start;
+  color: rgb(175, 174, 174);
+}
+.fa-plus-square {
+  color: #0046fe !important;
+  font-size: x-large;
+  margin-right: 5px;
+}
+
+.employee-table-header {
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #0046fe;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 8px 8px 0px 0px;
+}
+.navbar {
+  padding: 0px;
+  padding-top: 5px;
+}
+.table-left-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.pagination {
+  align-items: center;
+}
+.header-field {
+  font-size: 16px;
+  font-weight: 700;
+  width: 300px;
+  margin: 5px;
+}
+.employee-table {
+  background-color: white;
+}
+.employee-card {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  border: 1px solid #dddbdb;
+}
+.card-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  width: 300px;
+}
+.card-contact {
+  display: flex;
+}
+.card-cell {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 5px;
+}
+.card-office {
+  display: flex;
+  justify-content: space-evenly;
+}
+.card-email {
+  display: flex;
+  justify-content: space-evenly;
+}
+.card-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+}
+.card-left-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.card-contact-wrapper {
+  text-align: left;
+}
+.card-name-wrapper {
+  align-self: center;
+}
+// .monthly-salary {
+//   color: black;
+//   align-self: center;
+//   border: 1px solid #ffffff;
+//   width: 150px;
+//   margin-right: 50px;
+// }
+.card-right-wrapper {
+  align-self: center;
+}
+.card-cell-title {
+  width: 50px;
+  margin-right: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #3a485a;
+}
+img {
+  margin: 5px;
+}
+.fa {
+  font-weight: 600;
+  width: 250px;
+  height: 40px;
+}
+
+//Create Employee
+.create-employee-header {
+  padding: 12px 15px;
+  background-color: #0046fe;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.create-contact-header {
+  padding: 7px 15px;
+  background-color: #0046fe;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.create-contact-title{
+  color: white;
+}
+.create-employee-back-btn {
+  padding: 7px 15px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.create-employee-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  padding: .5rem;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  .create-employee-left {
+    display: flex;
+    .employee-field-label-wrapper {
+      display: flex;
+      margin-bottom: 10px;
+      .employee-field-label {
+        align-self: center;
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+  }
+}
+.input-field {
+  margin-bottom: 26px;
+  background: #f7f8fc;
+  border: 1px solid #eceef3;
+  box-sizing: border-box;
+  border-radius: 6px;
+  width: 100%;
+}
+.MuiAutocomplete-inputFocused {
+  opacity: 1 !important;
+  height: 46px;
+  width: 100% !important;
+  background-color: #f7f8fc;
+  border: 0.5px solid #eceef3;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+// .input-field-control-role {
+//   width: 280px !important;
+// }
+.form-file {
+  background: #F7F8FC;
+  padding: 7px 5px 7px 10px;
+  border: 1px solid #3062FF;
+  border-radius: 6px;
+  position: relative;
+  height: 46px;
+  input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    height: 100%;
+    z-index: 9;
+    opacity: 0;
+  }
+}
+
+.save-btn {
+  background-color: #0046fe;
+}
+.input-txtarea-control {
+  font-weight: 400;
+  background: #f7f8fc;
+  border: 1px solid #eceef3;
+  box-sizing: border-box;
+  border-radius: 6px;
+  width: 100%;
+  height: 142px;
+  padding: 5px;
+}
+
+textarea::-webkit-input-placeholder {
+  color: rgb(184, 182, 182);
+}
+
+textarea:-moz-placeholder {
+  /* Firefox 18- */
+  color: rgb(184, 182, 182);
+}
+
+textarea::-moz-placeholder {
+  /* Firefox 19+ */
+  color: rgb(184, 182, 182);
+}
+
+textarea:-ms-input-placeholder {
+  color: rgb(184, 182, 182);
+}
+
+textarea::placeholder {
+  color: rgb(184, 182, 182);
+}
+
+//userpaneldashboard and //task js
+.login-field {
+  margin: 10px;
+  margin-bottom: 5px;
+}
+.modal-dialog {
+  max-width: 600px !important;
+}
+.modal-header {
+  display: flex;
+  justify-content: flex-start;
+  background-color: #3062ff;
+  width: 100%;
+  color: white;
+}
+.field-label {
+  display: flex;
+  width: 100px;
+  text-align: start;
+  margin-right: 12px;
+}
+.input-field {
+  border-radius: 5px !important;
+  border: 1px solid rgb(233, 231, 231) !important;
+  background-color: rgb(250, 251, 252) !important;
+  width: 250px !important;
+  height: 50px !important;
+}
+.input-field-desc {
+  border-radius: 5px !important;
+  border: 1px solid rgb(233, 231, 231) !important;
+  background-color: rgb(249, 249, 250) !important;
+  width: 250px;
+  height: 120px !important;
+  margin: 0px !important;
+}
+
+.task-wrapper {
+  background-color: white;
+  min-height: 871px;
+  border-radius: 5px;
+}
+.task-header-left {
+  display: flex;
+}
+.task-header-right {
+  display: flex;
+}
+.task-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+.btn-add-task {
+  cursor: pointer;
+}
+.btn-view-past-task {
+  cursor: pointer;
+}
+.modal-body {
+  display: flex;
+  justify-content: space-evenly;
+}
+.task-importance-left {
+  display: flex;
+}
+.priority-field {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+  border: 1px solid rgb(233, 231, 231);
+  padding: 5px;
+  margin: 5px;
+}
+.modal-right {
+  width: 100%;
+}
+
+.list-btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  .save-btn-white {
+    background: #0046FE;
+    color: #fff;
+  }
+}
+
+.repccur-box {
+  align-items: center;
+}
+
+.list-radio {
+  padding: 0 15px;
+  width: calc(100% + 10px);
+  margin: 0 -5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  li {
+    padding: 0 5px;
+    width: 50%;
+  }
+}
+
+.login-form {
+  .form-group {
+    .MuiAutocomplete-root {
+      width: 100% !important;
+    }
+  }
+
+  &.new-styles {
+    .list-btns {
+      .save-btn-white {
+        img {
+          width: 20px;
+        }
+      }
+    }
+
+    .form-group {
+      margin: 0 0 18px;
+
+      &.note-text {
+        font-size: 16px;
+        color: #000;
+        font-style: italic;
+        margin-bottom: 6px !important;
+      }
+    }
+
+    .list-radio {
+      margin-bottom: 4px;
+    }
+
+    .repccur-box {
+      padding: 11px 18px;
+      margin: 0 0 12px;
+    }
+
+    .employee-field-label-wrapper {
+      .titleUser-head {
+        margin: 0 0 12px;
+
+        &.social-media-label {
+          margin: 0 0 0 12px;
+        }
+      }
+    }
+
+    .btnadd-btn-custom-property {
+      padding: 7px 12px;
+      border-radius: 6px;
+
+      img {
+        padding: 0 !important;
+        margin-right: 7px !important;
+      }
+    }
+  }
+}
+
+.create-contact-header {
+  &.new-head {
+    border-radius: 5px 5px 0 0;
+    padding: 12px 15px;
+
+    .titleheader--card {
+      font-size: 18px;
+      font-weight: 700;
+
+      img {
+        position: relative;
+        top: 4px;
+      }
+    }
+  }
+}
+
+.custom-radio {
+  width: 22px;
+  height: 22px;
+  margin: 0;
+
+  span {
+    width: 22px;
+    height: 22px;
+    border-radius: 100%;
+    background: #f6f7fb;
+    position: relative;
+    display: block;
+
+    &:after {
+      width: 12px;
+      height: 12px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      background: #3062ff;
+      border-radius: 100%;
+      content: '';
+      transform: translate(-50%, -50%);
+      opacity: 0;
+    }
+  }
+
+  input[type="radio"] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+
+    &:checked {
+      + span:after {
+        opacity: 1;
+      }
+    }
+  }
+}

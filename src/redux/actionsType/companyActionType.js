@@ -1,0 +1,9 @@
+export const ALL_COMPANY = "ALL_COMPANY";
+export const COMPANY_BY_ID = "COMPANY_BY_ID";
+export const CREATE_COMPANY = "CREATE_COMPANY";
+export const UPDATE_COMPANY = "UPDATE_COMPANY";
+export const DELETE_COMPANY = "DELETE_COMPANY";
+export const UPDATED = "UPDATED";
+export const CREATED = "CREATED";
+export const COMPANY_PAGING_DATA = "COMPANY_PAGING_DATA";
+export const TOTAL_COMPANY = "TOTAL_COMPANY";

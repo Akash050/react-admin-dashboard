@@ -1,0 +1,51 @@
+.locations-holder {
+	display: flex;
+	margin: 0 -10px;
+	
+	@include media('<1900px') {
+		margin: 0 -5px;
+	}
+}
+
+.location-box {
+	flex: 1;
+	padding: 0 10px;
+	display: flex;
+	margin: 0 0 -4px;
+	
+	@include media('<1900px') {
+		padding: 0 5px;
+	}
+	
+	.img {
+		width: 50px;
+		height: 50px;
+		min-width: 50px;
+		overflow: hidden;
+		border-radius: 100%;
+		margin: 3px 15px 0 0;
+		
+		@include media('<1900px') {
+			margin: 3px 12px 0 0;
+		}
+		
+		@include media('<1600px') {
+			margin: 3px 10px 0 0;
+			width: 40px;
+			height: 40px;
+			min-width: 40px;
+		}
+		
+		img {
+			@include size(100%);
+			
+			border-radius: 100%;
+			display: block;
+		}
+	}
+	
+	.address {
+		font-style: normal;
+		max-width: 150px;
+	}
+}

@@ -1,0 +1,45 @@
+.superth-tbl img {
+    margin: 0px 10px 0px 0px;
+}
+.superth-tbl {
+    display: flex;
+    align-items: center;
+}
+.sidesub--menuac {
+    background-color: #215efe;
+}
+.menuItem .sidesub--menuac .Linksub--txtlink a {
+    background-color: transparent;
+    color: #fff;
+    display: block;
+    padding: 15px 10px;
+    border-bottom: 1px solid #aeaeae;
+}
+.menuItem .sidesub--menuac .Linksub--txtlink:last-child a {
+    border-bottom: 0px;
+}
+.sidesub--menuac{
+    display: none;
+    margin-left: 20px;
+}
+.showmenu{
+    display: block;
+}
+.arrow-right-icon {
+    float: right;
+    line-height: 45px;
+}
+.arrow-right-icon .fa {
+    width: auto;
+}
+.visit--btn-view {
+    background-color: #0046fe;
+    color: #fff;
+}
+.pagination .page-item-link .linkpage img{
+    vertical-align: middle;
+}
+.btn-default-theme {
+    background-color: #0046fe;
+    color:#fff;
+}

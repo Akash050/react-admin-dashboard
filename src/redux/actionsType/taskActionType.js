@@ -1,0 +1,9 @@
+export const CREATE_TASK = "CREATE_TASK";
+export const ALL_TASKS = "ALL_TASKS";
+export const UPDATE_TASK = "UPDATE_TASK";
+export const DELETE_TASK = "DELETE_TASK";
+export const GET_TOP_THREE_TASKS = "GET_TOP_THREE_TASKS";
+export const UPDATED = "UPDATED";
+export const CREATED = "CREATED";
+export const PAGING_DATA = "PAGING_DATA";
+export const TOTAL_DATA = "TOTAL_DATA";

@@ -1,0 +1,121 @@
+.aside-nav {
+	width: 184px;
+	min-width: 184px;
+	background: $white;
+	padding: 25px 0 25px 11px;
+	box-shadow: 5px 0 10px rgba(47, 59, 76, 0.06);
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+	
+	@include media('<1600px') {
+		width: 155px;
+		min-width: 155px;
+		padding: 25px 0 25px 5px;
+	}
+	
+	ul {
+		@include listreset;
+		
+		li {
+			margin: 0 0 1px;
+			
+			.icon {
+				@include animate(all, 0.25s, ease-in-out);
+				@include size(46px);
+				
+				background: $white-lilac;
+				border-radius: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin: 0 12px 0 0;
+				color: $malibu;
+				
+				@include media('<1600px') {
+					@include size(40px);
+					
+					margin: 0 10px 0 0;
+				}
+				
+				&.icon-dashboard,
+				&.icon-pipeline {
+					font-size: 16px;
+				}
+				
+				&.icon-follow-up,
+				&.icon-properties,
+				&.icon-pin,
+				&.icon-report,
+				&.icon-status {
+					font-size: 18px;
+				}
+				
+				&.icon-contacts,
+				&.icon-marketing {
+					font-size: 20px;
+				}
+				
+				&.icon-comment {
+					font-size: 15px;
+				}
+			}
+			
+			a {
+				display: flex;
+				align-items: center;
+				color: $oxford-blue;
+				text-decoration: none;
+				padding: 8px;
+				position: relative;
+				font-weight: 500;
+				
+				&:after {
+					@include animate(all, 0.25s, ease-in-out);
+					@include size(173px, 118px);
+					
+					background: url('../images/active-bg.svg') no-repeat;
+					background-size: 100% 100%;
+					position: absolute;
+					left: 0;
+					top: 50%;
+					transform: translateY(-50%);
+					content: '';
+					z-index: -1;
+					opacity: 0;
+					visibility: hidden;
+				}
+				
+				&:hover {
+					color: $dodger-blue;
+					
+					.icon {
+						color: $white;
+						background: $dodger-blue;
+					}
+					
+					&:after {
+						opacity: 1;
+						visibility: visible;
+					}
+				}
+			}
+			
+			&.active {
+				a {
+					color: $dodger-blue;
+					
+					.icon {
+						color: $white;
+						background: $dodger-blue;
+					}
+					
+					&:after {
+						opacity: 1;
+						visibility: visible;
+					}
+				}
+			}
+		}
+	}
+}

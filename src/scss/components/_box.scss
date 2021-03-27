@@ -1,0 +1,165 @@
+.box {
+	padding: 18px 20px;
+	margin: 0 0 20px;
+	background: $white;
+	border-radius: 6px;
+	box-shadow: 0 3px 12px rgba(47, 59, 76, 0.04);
+	
+	@include media('<1900px') {
+		padding: 18px 15px;
+	}
+	
+	@include media('<1600px') {
+		padding: 18px 10px;
+	}
+	
+	&:last-child {
+		margin: 0;
+	}
+	
+	.head {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		padding: 9px 0;
+	}
+	
+	.head-right {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin: -8px 0 -5px;
+		
+		.dots {
+			margin: 0 20px 0 0;
+		}
+	}
+	
+	.title-box {
+		display: flex;
+		align-items: center;
+		margin: 0 0 15px;
+		
+		.icon {
+			line-height: 1;
+			font-size: 24px;
+			height: 24px;
+			color: $dodger-blue;
+			margin: 0 15px 0 0;
+			display: flex;
+			align-items: center;
+			
+			&.icon-tasklist {
+				font-size: 16px;
+			}
+			
+			&.icon-clock {
+				font-size: 20px;
+			}
+		}
+		
+		.title {
+			font-size: 18px;
+			line-height: 21px;
+			font-weight: 700;
+			color: $cod-gray;
+			display: block;
+			flex-grow: 1;
+			flex-basis: 0;
+		}
+	}
+	
+	.subheading {
+		display: block;
+		position: relative;
+		text-align: center;
+		color: $cod-gray;
+		font-size: 16px;
+		line-height: 20px;
+		margin: 0 0 15px;
+		
+		&:before {
+			border-top: 1px dashed #e5e5e5;
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 50%;
+			content: '';
+			margin-top: -1px;
+		}
+		
+		span {
+			background: $white;
+			display: inline-block;
+			position: relative;
+			z-index: 1;
+			padding: 0 15px;
+		}
+	}
+}
+
+.dots {
+	@include listreset;
+	@include font(0, 0);
+	
+	display: flex;
+	margin: 7px 0 0;
+	
+	li {
+		padding: 0 2px;
+		
+		a {
+			width: 8px;
+			height: 8px;
+			display: block;
+			border-radius: 100%;
+			background: $mercury;
+			
+			&:hover {
+				background: $dodger-blue;
+			}
+		}
+		
+		&.active {
+			a {
+				background: $dodger-blue;
+			}
+		}
+	}
+}
+
+.btn-add {
+	background: $white;
+	border-radius: 6px;
+	display: inline-flex;
+	align-items: center;
+	padding: 7px 10px;
+	border: 1px solid $athens-gray;
+	
+	.icon-plus {
+		@include animate(all, 0.25s, ease-in-out);
+		@include size(22px);
+		
+		background: $dodger-blue;
+		border-radius: 100%;
+		color: $white;
+		font-size: 8px;
+		line-height: 1;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0 0 1px;
+		margin: 0 10px 0 0;
+	}
+	
+	&:hover {
+		color: $white;
+		background: $dodger-blue;
+		border-color: $dodger-blue;
+		
+		.icon-plus {
+			background: $white;
+			color: $dodger-blue;
+		}
+	}
+}

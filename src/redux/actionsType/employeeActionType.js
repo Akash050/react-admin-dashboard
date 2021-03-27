@@ -1,0 +1,12 @@
+export const CREATE_EMPLOYEE = "CREATE_EMPLOYEE";
+export const ALL_EMPLOYEES = "ALL_EMPLOYEES";
+export const UPDATE_EMPLOYEE = "UPDATE_EMPLOYEE";
+export const DELETE_EMPLOYEE = "DELETE_EMPLOYEE";
+export const UPDATED = "UPDATED";
+export const CREATED = "CREATED";
+export const PAGING_DATA = "PAGING_DATA";
+export const TOTAL_DATA = "TOTAL_DATA";
+export const EMPLOYEE_SALARY = "EMPLOYEE_SALARY";
+export const TOTAL_EMPLOYEE = "TOTAL_EMPLOYEE";
+export const EMPLOYEE_PROFILE = "EMPLOYEE_PROFILE";
+export const RESET_STATE = "RESET_STATE";

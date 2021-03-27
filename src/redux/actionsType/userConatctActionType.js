@@ -1,0 +1,11 @@
+export const CREATE_CONTACT = "CREATE_CONTACT";
+export const ALL_CONTACTS = "ALL_CONTACTS";
+export const UPDATE_CONTACT = "UPDATE_CONTACT";
+export const DELETE_CONTACT = "DELETE_CONTACT";
+export const UPDATED = "UPDATED";
+export const CREATED = "CREATED";
+export const PAGING_DATA = "PAGING_DATA";
+export const TOTAL_DATA = "TOTAL_DATA";
+export const TOTAL_CONTACT = "TOTAL_CONTACT";
+export const CONTACT_PROFILE = "CONTACT_PROFILE";
+export const RESET_STATE = "RESET_STATE";

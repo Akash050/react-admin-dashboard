@@ -1,0 +1,22 @@
+.logo {
+	width: 184px;
+	min-width: 184px;
+	height: 80px;
+	padding: 18px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-bottom: 1px solid $athens-gray;
+	box-shadow: 5px 0 10px rgba(47, 59, 76, 0.06);
+	
+	@include media('<1600px') {
+		width: 155px;
+		min-width: 155px;
+		padding: 12px;
+	}
+	
+	a {
+		width: 148px;
+		width: 100%;
+	}
+}

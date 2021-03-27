@@ -1,0 +1,26 @@
+.notification {
+	margin: 0 20px 0 0;
+	
+	.notification-link {
+		color: $cadet-blue;
+		font-size: 20px;
+		line-height: 1;
+		text-decoration: none;
+		position: relative;
+		
+		&:after {
+			@include size(5px);
+			
+			position: absolute;
+			right: -2px;
+			top: -1px;
+			content: '';
+			background: $red;
+			border-radius: 100%;
+		}
+		
+		&:hover {
+			color: $dodger-blue;
+		}
+	}
+}

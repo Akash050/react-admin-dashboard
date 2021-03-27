@@ -1,0 +1,8 @@
+export const ALL_PROFILE = "ALL_PROFILE";
+export const CREATE_PROFILE = "CREATE_PROFILE";
+export const UPDATE_PROFILE = "UPDATE_PROFILE";
+export const DELETE_PROFILE = "DELETE_PROFILE";
+export const UPDATED = "UPDATED";
+export const CREATED = "CREATED";
+export const PROFILE_PAGING_DATA = "PROFILE_PAGING_DATA";
+export const TOTAL_PROFILE = "TOTAL_PROFILE";

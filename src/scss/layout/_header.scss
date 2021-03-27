@@ -1,0 +1,24 @@
+#header {
+	display: flex;
+	height: 80px;
+	background: $white;
+	box-shadow: 0 5px 10px rgba(47, 59, 76, 0.06);
+}
+
+.header-wrap {
+	padding: 20px;
+	flex-grow: 1;
+	flex-basis: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	
+	@include media('<1600px') {
+		padding: 15px 10px;
+	}
+}
+
+.user-box {
+	display: flex;
+	align-items: center;
+}

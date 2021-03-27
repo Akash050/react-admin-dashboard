@@ -1,0 +1,53 @@
+.user-info {
+	.user-link {
+		display: flex;
+		align-items: center;
+		text-decoration: none;
+		position: relative;
+		padding: 0 25px 0 0;
+		
+		&:after {
+			font-family: 'icomoon';
+			content: '\e901';
+			font-size: 10px;
+			line-height: 1;
+			position: absolute;
+			right: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			color: $dodger-blue;
+		}
+	}
+	
+	.avatar {
+		@include size(35px);
+		
+		border-radius: 100%;
+		overflow: hidden;
+		margin: 0 12px 0 0;
+		
+		img {
+			@include size(100%);
+			
+			display: block;
+			border-radius: 100%;
+		}
+	}
+	
+	.username,
+	.text {
+		display: block;
+		line-height: 1.219;
+	}
+	
+	.username {
+		color: $cod-gray;
+		font-size: 16px;
+		margin: 0 0 2px;
+	}
+	
+	.text {
+		font-size: 13px;
+		color: $bali;
+	}
+}

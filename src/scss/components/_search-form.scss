@@ -1,0 +1,25 @@
+.search-form {
+	overflow: hidden;
+	border-radius: 6px;
+	position: relative;
+	background: $white-lilac;
+	width: 275px;
+	
+	label {
+		color: $oxford-blue;
+		font-size: 16px;
+		position: absolute;
+		left: 15px;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	
+	.text-input {
+		border: 0;
+		height: 40px;
+		line-height: 20px;
+		padding: 10px 15px 10px 45px;
+		color: $oxford-blue;
+		background: $white-lilac;
+	}
+}

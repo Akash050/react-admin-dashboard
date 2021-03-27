@@ -1,0 +1,129 @@
+.proposal-box {
+	font-size: 13px;
+	line-height: 20px;
+	overflow: hidden;
+	border-radius: 8px;
+	position: relative;
+	padding: 17px 40px 15px 20px;
+	border: 1px solid $athens-gray;
+	border-left: 5px solid $orange;
+	
+	+ .proposal-box {
+		margin: 8px 0 0;
+	}
+	
+	.subtitle {
+		display: block;
+		font-size: 15px;
+		line-height: 18px;
+		font-weight: 700;
+		color: $oxford-blue;
+		margin: 0 0 11px;
+	}
+	
+	.status {
+		display: block;
+		position: relative;
+		padding-left: 25px;
+		margin: 0 0 1px;
+		color: $orange;
+		
+		&:before,
+		&:after {
+			position: absolute;
+			content: '';
+			top: 50%;
+			transform: translateY(-50%);
+			border-radius: 100%;
+		}
+		
+		&:before {
+			width: 14px;
+			height: 14px;
+			left: 0;
+			border: 1px solid $orange;
+		}
+		
+		&:after {
+			background: $orange;
+			width: 8px;
+			height: 8px;
+			left: 3px;
+		}
+	}
+	
+	.date {
+		display: block;
+		position: relative;
+		padding-left: 25px;
+		color: $bali;
+		
+		&:before {
+			font-size: 14px;
+			line-height: 1;
+			position: absolute;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			font-family: 'icomoon';
+			content: '\e906';
+		}
+	}
+	
+	.btn-play {
+		width: 22px;
+		height: 22px;
+		font-size: 10px;
+		background: $cadet-blue;
+		color: $white;
+		position: absolute;
+		right: 17px;
+		top: 17px;
+		border-radius: 100%;
+		background: $cadet-blue;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0 0 0 1px;
+		
+		@include media('<1600px') {
+			right: 10px;
+		}
+		
+		&:hover {
+			background: $dodger-blue;
+		}
+	}
+	
+	&.yellow {
+		border-left-color: $yellow;
+		
+		.status {
+			color: $yellow;
+			
+			&:before {
+				border-color: $yellow;
+			}
+
+			&:after {
+				background: $yellow;
+			}
+		}
+	}
+	
+	&.red {
+		border-left-color: $red;
+		
+		.status {
+			color: $red;
+			
+			&:before {
+				border-color: $red;
+			}
+
+			&:after {
+				background: $red;
+			}
+		}
+	}
+}
