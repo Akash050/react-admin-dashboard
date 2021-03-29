@@ -59,7 +59,7 @@ const TheSidebar = (props) => {
         <div className="leftasside">
           <asside className="asside-menu">
             <div className="logoBrand">
-              <img src={logo} />
+              <h3>React Admin</h3>
             </div>
             <div className="leftMenubar">
               <ul className="menuItem">
@@ -80,81 +80,7 @@ const TheSidebar = (props) => {
                     </a>
                   </li>
                 ) : null}
-                {getRole == "admin" ? (
-                  <li
-                    className={`ItemmenuList ${
-                      activeTab == "/superadmin/companies" ||
-                      activeTab == "/superadmin/company/create"
-                        ? "active"
-                        : null
-                    } `}
-                  >
-                    <a
-                      onClick={(e) =>
-                        handleClick(e, "/superadmin/companies", "Company")
-                      }
-                      href=""
-                      className="LinkItems"
-                    >
-                      <span className="icon-menu">
-                        <img src={CompanyIcon} />
-                      </span>
-                      Company
-                      <span
-                        onClick={handleCompanyClick}
-                        class="arrow-right-icon "
-                      >
-                        <i
-                          class={`fa ${
-                            isCompanySubMenu ? "fa-angle-up" : "fa-angle-down"
-                          } `}
-                          aria-hidden="true"
-                        ></i>
-                      </span>
-                    </a>
-                    <ul
-                      className={`sidesub--menuac ${
-                        isCompanySubMenu ? "showmenu" : ""
-                      }`}
-                    >
-                      <li
-                        onClick={(e) =>
-                          handleClick(e, "/superadmin/companies", "Company")
-                        }
-                        className="Linksub--txtlink"
-                      >
-                        <a href="#">Manage Company</a>
-                      </li>
-                      <li
-                        onClick={(e) =>
-                          handleClick(
-                            e,
-                            "/superadmin/company/create",
-                            "Company"
-                          )
-                        }
-                        className="Linksub--txtlink"
-                      >
-                        <a href="#">Add Company</a>
-                      </li>
-                    </ul>
-                  </li>
-                ) : null}
-                {getRole == "admin" ? (
-                  <li
-                    onClick={(e) => handleClick(e, "/admin/tickets", "Tickets")}
-                    className={`ItemmenuList ${
-                      activeTab == "/admin/tickets" ? "active" : null
-                    } `}
-                  >
-                    <a href="" className="LinkItems">
-                      <span className="icon-menu">
-                        <img src={supporttc} />
-                      </span>
-                      Support Tickets
-                    </a>
-                  </li>
-                ) : null}
+           
                 <li
                   onClick={(e) =>
                     handleClick(e, "/admin/employees", "Employees")
@@ -209,146 +135,7 @@ const TheSidebar = (props) => {
           </asside>
         </div>
       ) : (
-        <div className="leftasside">
-          <asside className="asside-menu">
-            <div className="logoBrand">
-              <img src={logo} />
-            </div>
-            <div className="leftMenubar">
-              <ul className="menuItem">
-                {getRole == "admin"? (
-                  <li
-                    onClick={(e) =>
-                      handleClick(e, "/admin/dashboard", "Dashboard")
-                    }
-                    className={`ItemmenuList ${
-                      activeTab == "/admin/dashboard" ? "active" : null
-                    } `}
-                  >
-                    <a href="" className="LinkItems">
-                      <span className="icon-menu">
-                        <img src={dashboard} />
-                      </span>
-                      Dashboard
-                    </a>
-                  </li>
-                ) : null}
-                {getRole == "admin" ? (
-                  <li
-                    className={`ItemmenuList ${
-                      activeTab == "/superadmin/companies" ||
-                      activeTab == "/superadmin/company/create"
-                        ? "active"
-                        : null
-                    } `}
-                  >
-                    <a
-                      onClick={(e) =>
-                        handleClick(e, "/superadmin/companies", "Company")
-                      }
-                      href=""
-                      className="LinkItems"
-                    >
-                      <span className="icon-menu">
-                        <img src={CompanyIcon} />
-                      </span>
-                      Company
-                      <span
-                        onClick={handleCompanyClick}
-                        class="arrow-right-icon "
-                      >
-                        <i
-                          class={`fa ${
-                            isCompanySubMenu ? "fa-angle-up" : "fa-angle-down"
-                          } `}
-                          aria-hidden="true"
-                        ></i>
-                      </span>
-                    </a>
-                    <ul
-                      className={`sidesub--menuac ${
-                        isCompanySubMenu ? "showmenu" : ""
-                      }`}
-                    >
-                      <li
-                        onClick={(e) =>
-                          handleClick(e, "/superadmin/companies", "Company")
-                        }
-                        className="Linksub--txtlink"
-                      >
-                        <a href="#">Manage Company</a>
-                      </li>
-                      <li
-                        onClick={(e) =>
-                          handleClick(
-                            e,
-                            "/superadmin/company/create",
-                            "Company"
-                          )
-                        }
-                        className="Linksub--txtlink"
-                      >
-                        <a href="#">Add Company</a>
-                      </li>
-                    </ul>
-                  </li>
-                ) : null}
-              
-                <li
-                  onClick={(e) =>
-                    handleClick(e, "/admin/employees", "Employees")
-                  }
-                  className={`ItemmenuList ${
-                    activeTab == "/admin/employees" ? "active" : null
-                  } `}
-                >
-                  {getRole == "ROLE_COMPANY_ADMIN" ||
-                  getRole == "ROLE_ADMIN" ||
-                  getRole == "SUPER_ADMIN_AS_COMPANY_ADMIN" ? (
-                    <a href="" className="LinkItems">
-                      <span className="icon-menu">
-                        <img src={employee} />
-                      </span>
-                      Employees
-                    </a>
-                  ) : (
-                    <></>
-                  )}
-                </li>
-                {getRole == "admin"? (
-                  <li
-                    onClick={(e) => handleClick(e, "/admin/budget", "Budget")}
-                    className={`ItemmenuList ${
-                      activeTab == "/admin/budget" ? "active" : null
-                    } `}
-                  >
-                    <a href="" className="LinkItems">
-                      <span className="icon-menu">
-                        <img src={budget} />
-                      </span>
-                      Budget
-                    </a>
-                  </li>
-                ) : null}
-                {getRole == "admin" ? (
-                  <li
-                    onClick={(e) => handleClick(e, "/admin/profile", "Profile")}
-                    className={`ItemmenuList ${
-                      activeTab == "/admin/profile" ? "active" : null
-                    } `}
-                  >
-                    <a href="" className="LinkItems">
-                      <span className="icon-menu">
-                        <img src={employee} />
-                      </span>
-                      Profile
-                    </a>
-                  </li>
-                ) : null}
-              </ul>
-            </div>
-          </asside>
-        </div>
+        null
       )}
     </>
   );

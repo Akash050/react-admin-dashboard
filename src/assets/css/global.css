@@ -17,6 +17,7 @@ img {
   background-color: #0046fe;
 }
 .logoBrand {
+  color: white;
   text-align: center;
   padding: 19px 10px;
   border-bottom: 1px solid rgb(255 255 255 / 20%);
