@@ -28,8 +28,6 @@ import prevpage from "../../../assets/icons/prev-arrow.svg";
 import nextpage from "../../../assets/icons/next-arrow.svg";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import * as bubbleTimerActionTypes from "../../../redux/actionsType/bubbleTimerActionType";
-import BubbleTimer from "../bubbleTimer/BubbleTimer";
 import { changeTaskStatus } from "../../../redux/actions/bubbleTimer";
 
 const Task = () => {
@@ -790,11 +788,7 @@ const Task = () => {
             </div>
           </CForm>
         </CModal>
-        <div>
-          {
-            isBubbleTimer ? <BubbleTimer /> : ''
-          }
-        </div>
+
         <div className="pagination--bar py-2">
           <ul className="pagination">
             <li className="page-item-link">

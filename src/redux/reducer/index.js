@@ -1,12 +1,6 @@
 import { combineReducers } from "redux";
 import employeeReducer from "./employeeReducer";
-import userReducer from "./usersReducer";
 import companyReducer from "./companyReducer";
-import vehicalsReducers from "./vehicalsReducers";
-import offersReducers from "./offersReducer";
-import driversReducer from "./driversReducer";
-import ridesReducers from "./ridesReducers";
-import goodsReducers from "./goodsReducer";
 import generalReducer from "./generalReducer";
 import authReducer from "./authReducer";
 import taskReducer from "./taskReducer";
@@ -30,17 +24,11 @@ export default combineReducers({
   general: generalReducer,
   profile: profileReducer,
   companyGeneral: companyGeneralReducer,
-  users: userReducer,
   company: companyReducer,
   contactCompany: contactCompanyReducer,
   property: propertyReducer,
   propertyTemplate: propertyTemplateReducer,
   propertyFollowUp: propertyFollowUpReducer,
-  vehicals: vehicalsReducers,
-  drivers: driversReducer,
-  rides: ridesReducers,
-  offers: offersReducers,
-  goods: goodsReducers,
   auth: authReducer,
   salary: salaryReducer,
   employeeCount: employeeCountReducer,
