@@ -13,7 +13,7 @@ const loading = (
 );
 const AuthRoute = ({ component: Component, ...rest }) => {
   const isLoggedIn = localStorage.getItem("isLoggedIn");
-  const expires_in = localStorage.getItem("expires_in");
+  console.log("isLoggedInisLoggedInisLoggedIn --->", isLoggedIn)
 
   return (
     <Route

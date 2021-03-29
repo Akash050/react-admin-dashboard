@@ -50,11 +50,10 @@ const Login = (props) => {
     } else if (!validation.fails()) {
       if (username == "admin") {
         localStorage.setItem("role", "admin");
+        localStorage.setItem("isLoggedIn", true);
       } else if (username == "user") {
         localStorage.setItem("role", "user");
-      }
-      else {
-        localStorage.setItem("role", "user");
+        localStorage.setItem("isLoggedIn", true);
       }
       setIsLoading(false);
       let role = localStorage.getItem("role");

@@ -63,9 +63,7 @@ const TheSidebar = (props) => {
             </div>
             <div className="leftMenubar">
               <ul className="menuItem">
-                {getRole == "ROLE_COMPANY_ADMIN" ||
-                getRole == "ROLE_ADMIN" ||
-                getRole == "SUPER_ADMIN_AS_COMPANY_ADMIN" ? (
+                {getRole == "admin"? (
                   <li
                     onClick={(e) =>
                       handleClick(e, "/admin/dashboard", "Dashboard")
@@ -82,7 +80,7 @@ const TheSidebar = (props) => {
                     </a>
                   </li>
                 ) : null}
-                {getRole == "ROLE_SUPER_ADMIN" ? (
+                {getRole == "admin" ? (
                   <li
                     className={`ItemmenuList ${
                       activeTab == "/superadmin/companies" ||
@@ -142,7 +140,7 @@ const TheSidebar = (props) => {
                     </ul>
                   </li>
                 ) : null}
-                {getRole == "ROLE_SUPER_ADMIN" ? (
+                {getRole == "admin" ? (
                   <li
                     onClick={(e) => handleClick(e, "/admin/tickets", "Tickets")}
                     className={`ItemmenuList ${
@@ -165,9 +163,7 @@ const TheSidebar = (props) => {
                     activeTab == "/admin/employees" ? "active" : null
                   } `}
                 >
-                  {getRole == "ROLE_COMPANY_ADMIN" ||
-                  getRole == "ROLE_ADMIN" ||
-                  getRole == "SUPER_ADMIN_AS_COMPANY_ADMIN" ? (
+                  {getRole == "admin" ? (
                     <a href="" className="LinkItems">
                       <span className="icon-menu">
                         <img src={employee} />
@@ -178,9 +174,7 @@ const TheSidebar = (props) => {
                     <></>
                   )}
                 </li>
-                {getRole == "ROLE_COMPANY_ADMIN" ||
-                getRole == "ROLE_ADMIN" ||
-                getRole == "SUPER_ADMIN_AS_COMPANY_ADMIN" ? (
+                {getRole == "admin"  ? (
                   <li
                     onClick={(e) => handleClick(e, "/admin/budget", "Budget")}
                     className={`ItemmenuList ${
@@ -195,7 +189,7 @@ const TheSidebar = (props) => {
                     </a>
                   </li>
                 ) : null}
-                {getRole == "ROLE_COMPANY_ADMIN" ? (
+                {getRole == "admin" ? (
                   <li
                     onClick={(e) => handleClick(e, "/admin/profile", "Profile")}
                     className={`ItemmenuList ${
@@ -222,9 +216,7 @@ const TheSidebar = (props) => {
             </div>
             <div className="leftMenubar">
               <ul className="menuItem">
-                {getRole == "ROLE_COMPANY_ADMIN" ||
-                getRole == "ROLE_ADMIN" ||
-                getRole == "SUPER_ADMIN_AS_COMPANY_ADMIN" ? (
+                {getRole == "admin"? (
                   <li
                     onClick={(e) =>
                       handleClick(e, "/admin/dashboard", "Dashboard")
@@ -241,7 +233,7 @@ const TheSidebar = (props) => {
                     </a>
                   </li>
                 ) : null}
-                {getRole == "ROLE_SUPER_ADMIN" ? (
+                {getRole == "admin" ? (
                   <li
                     className={`ItemmenuList ${
                       activeTab == "/superadmin/companies" ||
@@ -301,21 +293,7 @@ const TheSidebar = (props) => {
                     </ul>
                   </li>
                 ) : null}
-                {getRole == "ROLE_SUPER_ADMIN" ? (
-                  <li
-                    onClick={(e) => handleClick(e, "/admin/tickets", "Tickets")}
-                    className={`ItemmenuList ${
-                      activeTab == "/admin/tickets" ? "active" : null
-                    } `}
-                  >
-                    <a href="" className="LinkItems">
-                      <span className="icon-menu">
-                        <img src={supporttc} />
-                      </span>
-                      Support Tickets
-                    </a>
-                  </li>
-                ) : null}
+              
                 <li
                   onClick={(e) =>
                     handleClick(e, "/admin/employees", "Employees")
@@ -337,9 +315,7 @@ const TheSidebar = (props) => {
                     <></>
                   )}
                 </li>
-                {getRole == "ROLE_COMPANY_ADMIN" ||
-                getRole == "ROLE_ADMIN" ||
-                getRole == "SUPER_ADMIN_AS_COMPANY_ADMIN" ? (
+                {getRole == "admin"? (
                   <li
                     onClick={(e) => handleClick(e, "/admin/budget", "Budget")}
                     className={`ItemmenuList ${
@@ -354,7 +330,7 @@ const TheSidebar = (props) => {
                     </a>
                   </li>
                 ) : null}
-                {getRole == "ROLE_COMPANY_ADMIN" ? (
+                {getRole == "admin" ? (
                   <li
                     onClick={(e) => handleClick(e, "/admin/profile", "Profile")}
                     className={`ItemmenuList ${
