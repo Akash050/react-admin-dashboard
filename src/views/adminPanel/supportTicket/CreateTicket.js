@@ -1,13 +1,7 @@
 import React, { useEffect, useState, createRef } from "react";
-import Modal from "../../../components/common/Modal";
 import {
-  CRow,
-  CCol,
-  CLabel,
   CInput,
   CForm,
-  CFormGroup,
-  CFormText,
   CButton,
   CImg,
 } from "@coreui/react";

@@ -1,23 +1,13 @@
-import React, { useEffect, useState, createRef } from "react";
-import Modal from "../../../components/common/Modal";
+import React, { useEffect, useState } from "react";
 import {
-  CRow,
-  CCol,
-  CLabel,
-  CInput,
-  CFormGroup,
-  CFormText,
   CButton,
   CBadge,
   CCardBody,
   CCollapse,
   CDataTable,
-  CToaster,
-  CToastBody,
-  CToast,
 } from "@coreui/react";
 import { useDispatch, useSelector } from "react-redux";
-import { offerList, addOffer } from "../../../redux/actions/offerAction";
+import { offerList } from "../../../redux/actions/offerAction";
 
 const EmployeeTable = () => {
   const [openModal, setOpenModal] = useState(false);

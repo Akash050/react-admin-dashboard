@@ -1,23 +1,9 @@
-import React, { useEffect, useState, createRef } from "react";
-// import classNames from "classnames";
-// import { rgbToHex } from "../employees/node_modules/@coreui/utils";
-// import DocsLink from "../../../reusable/DocsLink";
-import Modal from "../../../components/common/Modal";
+import React, { useEffect, useState } from "react";
 import {
-  CRow,
-  CCol,
-  CLabel,
-  CInput,
-  CFormGroup,
-  CFormText,
-  CButton,
   CImg,
 } from "@coreui/react";
 import { useDispatch, useSelector } from "react-redux";
 import profile from "../../../assets/profile.svg";
-import cellIcon from "../../../assets/cell.svg";
-import officeIcon from "../../../assets/office.svg";
-import emailIcon from "../../../assets/table-email.svg";
 import search from "../../../assets/icons/search-icon.svg";
 import addicon from "../../../assets/icons/addicon.svg"
 import namecdicon from "../../../assets/icons/namecd-icon.svg"
@@ -26,14 +12,8 @@ import paymenticon from "../../../assets/icons/payment-icon.svg";
 import prevpage from "../../../assets/icons/prev-arrow.svg";
 import nextpage from "../../../assets/icons/next-arrow.svg";
 const Contacts = (props) => {
-  const [openModal, setOpenModal] = useState(false);
-  const [offer_name, setOffer_name] = useState("");
-  const [code, setCode] = useState("");
-  const [discount, setDiscount] = useState("");
-  const [valid_to, setValid_to] = useState("");
-  const [Valid_from, setValid_from] = useState("");
-  const [message, setMessage] = useState("");
-  const [toast, setToast] = useState(false);
+
+
   const [activePageNo, setActivePageNo] = useState(1);
   const [rowsPerPage, seRowPerPage] = useState(4);
   const [page, setPage] = useState(0);
@@ -81,16 +61,16 @@ const Contacts = (props) => {
       setPage(page - 1);
     }
     return;
-    if (activePageNo == paginationLowerBound && activePageNo > 1) {
-      let arr = paginationcollection.slice(0, paginationcollection.length - 1);
-      let newArr = [arr[0] - 1, ...arr];
-      setPaginationcollection(newArr);
-      setPaginationUpperBound(newArr[newArr.length - 1]);
-      setPaginationLowerBound(newArr[0]);
-      setActivePageNo(newArr[0]);
-    } else if (activePageNo != paginationLowerBound && activePageNo > 1) {
-      setActivePageNo(activePageNo - 1);
-    }
+    // if (activePageNo == paginationLowerBound && activePageNo > 1) {
+    //   let arr = paginationcollection.slice(0, paginationcollection.length - 1);
+    //   let newArr = [arr[0] - 1, ...arr];
+    //   setPaginationcollection(newArr);
+    //   setPaginationUpperBound(newArr[newArr.length - 1]);
+    //   setPaginationLowerBound(newArr[0]);
+    //   setActivePageNo(newArr[0]);
+    // } else if (activePageNo != paginationLowerBound && activePageNo > 1) {
+    //   setActivePageNo(activePageNo - 1);
+    // }
   };
   let handleNextClick = (e) => {
     e.preventDefault();
@@ -98,36 +78,36 @@ const Contacts = (props) => {
       setPage(page + 1);
     }
     return;
-    if (contactList.length <= activePageNo * rowsPerPage) {
-      return;
-    }
-    if (activePageNo >= paginationUpperBound) {
-      let arr = paginationcollection.slice(1, paginationcollection.length);
-      let newArr = [...arr, arr[arr.length - 1] + 1];
-      setPaginationUpperBound(newArr[newArr.length - 1]);
-      setPaginationLowerBound(newArr[0]);
-      setPaginationcollection(newArr);
-      setActivePageNo(arr[arr.length - 1] + 1);
-    } else if (activePageNo < paginationUpperBound) {
-      setActivePageNo(activePageNo + 1);
-    }
+    // if (contactList.length <= activePageNo * rowsPerPage) {
+    //   return;
+    // }
+    // if (activePageNo >= paginationUpperBound) {
+    //   let arr = paginationcollection.slice(1, paginationcollection.length);
+    //   let newArr = [...arr, arr[arr.length - 1] + 1];
+    //   setPaginationUpperBound(newArr[newArr.length - 1]);
+    //   setPaginationLowerBound(newArr[0]);
+    //   setPaginationcollection(newArr);
+    //   setActivePageNo(arr[arr.length - 1] + 1);
+    // } else if (activePageNo < paginationUpperBound) {
+    //   setActivePageNo(activePageNo + 1);
+    // }
   };
   let handlePageClick = (e, val) => {
     e.preventDefault();
     setPage(val - 1);
     return;
 
-    if (
-      contactList.length <= val * rowsPerPage &&
-      contactList.length >= val * rowsPerPage - rowsPerPage
-    ) {
-      setActivePageNo(val);
-    } else if (
-      contactList.length >= val * rowsPerPage &&
-      contactList.length >= val * rowsPerPage - rowsPerPage
-    ) {
-      setActivePageNo(val);
-    }
+    // if (
+    //   contactList.length <= val * rowsPerPage &&
+    //   contactList.length >= val * rowsPerPage - rowsPerPage
+    // ) {
+    //   setActivePageNo(val);
+    // } else if (
+    //   contactList.length >= val * rowsPerPage &&
+    //   contactList.length >= val * rowsPerPage - rowsPerPage
+    // ) {
+    //   setActivePageNo(val);
+    // }
   };
   return (
     <>

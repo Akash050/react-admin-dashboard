@@ -1,4 +1,4 @@
-import React, { useEffect, useState, createRef } from "react";
+import React, { useEffect, useState } from "react";
 import { CImg } from "@coreui/react";
 import swal from 'sweetalert';
 import Loading from "react-fullscreen-loading";

@@ -1,13 +1,7 @@
 import React, { useEffect, useState, createRef } from "react";
-import Modal from "../../../components/common/Modal";
 import {
-  CRow,
-  CCol,
-  CLabel,
   CInput,
   CForm,
-  CFormGroup,
-  CFormText,
   CButton,
   CImg,
 } from "@coreui/react";
@@ -18,33 +12,21 @@ import { useHistory } from "react-router";
 import cellIcon from "../../../assets/cell.svg";
 import officeIcon from "../../../assets/office.svg";
 import emailIcon from "../../../assets/table-email.svg";
-import tagIcon from "../../../assets/tags.svg";
 import SaveBlue from "../../../assets/icons/save-blue-icon.svg";
 import upload from "../../../assets/icons/upload.svg";
-import CompanyIcon from "../../../assets/icons/company-icon.svg";
 import WebsiteIcon from "../../../assets/icons/website-icon.svg";
 import MoneyIcon from "../../../assets/icons/money-icon.svg";
 import Save from "../../../assets/icons/save.svg";
 import DollarIcon from "../../../assets/icons/dollar-icon.svg";
-import UserIcon from "../../../assets/icons/user-icon.svg";
-import CalendarIcon from "../../../assets/icons/calender-icon.svg";
-import YearIcon from "../../../assets/icons/year-icon.svg";
 import AddresIcon from "../../../assets/icons/address-icon.svg";
 import CityIcon from "../../../assets/icons/city-icon.svg";
 import CountryIcon from "../../../assets/icons/country-icon.svg";
 import StateIcon from "../../../assets/icons/state-icon.svg";
 import ZipIcon from "../../../assets/icons/zip-icon.svg";
-import FacebookIcon from "../../../assets/icons/facebook.svg";
-import LinkIcon from "../../../assets/icons/linkedin.svg";
-import TwitterIcon from "../../../assets/icons/twitter.svg";
 import * as Validator from "validatorjs";
-import CheckActive from "../../../assets/icons/check-active-icon.png";
-import CheckInactive from "../../../assets/icons/check-inactive-icon.svg";
+
 import {
-  created,
-  createCompany,
   uploadProfile,
-  updated,
 } from "../../../redux/actions/companyAction";
 import {
   getAllProfile,
@@ -53,8 +35,6 @@ import {
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 const CreateProfile = () => {
-  const profileImage = createRef();
-  let history = useHistory();
   const [uid, setUid] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [cid, setCid] = useState("");

@@ -1,38 +1,6 @@
-import React, { lazy } from 'react'
-import { useHistory, useLocation } from "react-router";
-import {
-  CBadge,
-  CButton,
-  CButtonGroup,
-  CCard,
-  CCardBody,
-  CCardFooter,
-  CCardHeader,
-  CCol,
-  CProgress,
-  CRow,
-  CCallout
-} from '@coreui/react'
-import CIcon from '@coreui/icons-react'
-
-
-import Chart from 'chart.js';
-import Highcharts from 'highcharts'
-import HighchartsReact from 'highcharts-react-official'
+import React from 'react'
+import { useHistory } from "react-router";
 import ApexChart from "react-apexcharts";
-import Usergroup from '../../../assets/icons/user-group.svg'
-import CompanySale from '../../../assets/icons/sale-compny.svg'
-import EditIcon from '../../../assets/icons/edit-icon.svg'
-import Team1 from '../../../assets/images/team1.jpg'
-import Team2 from '../../../assets/images/team2.jpg'
-import Team3 from '../../../assets/images/team3.jpg'
-import Team4 from '../../../assets/images/team4.jpg'
-import Team5 from '../../../assets/images/team5.jpg'
-import Team6 from '../../../assets/images/team6.jpg'
-import Team7 from '../../../assets/images/team7.jpg'
-
-
-
 
 const areaOptions = {
   chart: {
